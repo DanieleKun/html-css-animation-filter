@@ -137,3 +137,33 @@
     filter: sepia(0.8);
     transform: scale(1.5);
 }
+
+.ex-10-icon{
+    animation: rotate 1s infinite linear;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(1turn)
+    }
+}
+
+.ex-11-icon:hover{
+    animation: half-rotate 2s ;
+}
+@keyframes half-rotate{
+    85% {
+        transform: rotate(0.8turn);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: border-hole 2s;
+}
+@keyframes border-hole {
+    0% {
+        left: 0
+    }
+}
