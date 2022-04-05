@@ -160,10 +160,33 @@
 }
 
 .ex-12-button:hover .ex-12-top-white{
-    animation: border-hole 2s;
+    animation: border-hole-top 3s;
 }
-@keyframes border-hole {
+@keyframes border-hole-top {
     0% {
-        left: 0
+        left: 10%
+    }
+    50%{
+        left: 65%;
+    }
+
+    100%{
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: border-hole-bot 3s;
+}
+@keyframes border-hole-bot {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: 65%;
+    }
+
+    100% {
+        right: 20%;
     }
 }
